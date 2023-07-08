@@ -32,6 +32,8 @@ BuildRequires: cmake(KF6Config)
 BuildRequires: cmake(KF6Kirigami2)
 BuildRequires: cmake(KF6Notifications)
 BuildRequires: cmake(KF6KIO)
+# Prevent pulling in Plasma 5
+BuildRequires: plasma6-xdg-desktop-portal-kde
 Requires: %{libname} = %{EVRD}
 
 %description
