@@ -1,6 +1,6 @@
 %define libname %mklibname KF6Purpose
 %define devname %mklibname KF6Purpose -d
-%define git 20230818
+%define git 20230819
 
 Name: kf6-purpose
 Version: 5.240.0
