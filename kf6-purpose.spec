@@ -5,7 +5,7 @@
 #define git 20231103
 
 Name: kf6-purpose
-Version: 5.245.0
+Version: 5.246.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/purpose/-/archive/master/purpose-master.tar.bz2#/purpose-%{git}.tar.bz2
