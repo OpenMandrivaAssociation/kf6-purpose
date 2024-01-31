@@ -5,7 +5,7 @@
 #define git 20231103
 
 Name: kf6-purpose
-Version: 5.248.0
+Version: 5.249.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/purpose/-/archive/master/purpose-master.tar.bz2#/purpose-%{git}.tar.bz2
@@ -83,6 +83,11 @@ Framework for providing abstractions to get the developer's purposes fulfilled
 %{_datadir}/kf6/purpose
 %{_datadir}/icons/*/*/apps/phabricator-purpose6.*
 %{_datadir}/icons/*/*/apps/reviewboard-purpose6.*
+%dir %{_datadir}/accounts
+%dir %{_datadir}/accounts/services
+%dir %{_datadir}/accounts/services/kde
+%{_datadir}/accounts/services/kde/google-youtube.service
+%{_datadir}/accounts/services/kde/nextcloud-upload.service
 
 %files -n %{devname}
 %{_includedir}/KF6/Purpose
@@ -92,7 +97,6 @@ Framework for providing abstractions to get the developer's purposes fulfilled
 %files -n %{libname}
 %{_libdir}/libKF6Purpose.so*
 %{_libdir}/libKF6PurposeWidgets.so*
-%{_libdir}/libReviewboardHelpers.a
 %{_libdir}/libexec/kf6/purposeprocess
 %{_qtdir}/plugins/kf6/kfileitemaction/*
 %{_qtdir}/plugins/kf6/purpose
