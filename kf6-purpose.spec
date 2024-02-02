@@ -39,6 +39,7 @@ BuildRequires: cmake(KF6Config)
 BuildRequires: cmake(KF6Kirigami2)
 BuildRequires: cmake(KF6Notifications)
 BuildRequires: cmake(KF6KIO)
+BuildRequires: cmake(KAccounts6)
 Requires: %{libname} = %{EVRD}
 
 %description
