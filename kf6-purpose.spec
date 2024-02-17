@@ -2,10 +2,10 @@
 
 %define libname %mklibname KF6Purpose
 %define devname %mklibname KF6Purpose -d
-#define git 20231103
+%define git 20240217
 
 Name: kf6-purpose
-Version: 5.249.0
+Version: 5.250.0
 Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/purpose/-/archive/master/purpose-master.tar.bz2#/purpose-%{git}.tar.bz2
