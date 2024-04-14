@@ -1,3 +1,4 @@
+%define major %(echo %{version} |cut -d. -f1-2)
 %define stable %([ "$(echo %{version} |cut -d. -f2)" -ge 80 -o "$(echo %{version} |cut -d. -f3)" -ge 80 ] && echo -n un; echo -n stable)
 
 %define libname %mklibname KF6Purpose
@@ -5,12 +6,12 @@
 #define git 20240217
 
 Name: kf6-purpose
-Version: 6.0.0
-Release: %{?git:0.%{git}.}2
+Version: 6.1.0
+Release: %{?git:0.%{git}.}1
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/purpose/-/archive/master/purpose-master.tar.bz2#/purpose-%{git}.tar.bz2
 %else
-Source0: https://download.kde.org/%{stable}/frameworks/%{version}/purpose-%{version}.tar.xz
+Source0: https://download.kde.org/%{stable}/frameworks/%{major}/purpose-%{version}.tar.xz
 %endif
 Summary: Framework for providing abstractions to get the developer's purposes fulfilled
 URL: https://invent.kde.org/frameworks/purpose
