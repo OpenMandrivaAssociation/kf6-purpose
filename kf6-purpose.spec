@@ -5,9 +5,11 @@
 %define devname %mklibname KF6Purpose -d
 #define git 20240217
 
+%define qmlssoaccounts %mklibname SSOAccounts-qml
+
 Name: kf6-purpose
 Version: 6.11.0
-Release: %{?git:0.%{git}.}1
+Release: %{?git:0.%{git}.}2
 %if 0%{?git:1}
 Source0: https://invent.kde.org/frameworks/purpose/-/archive/master/purpose-master.tar.bz2#/purpose-%{git}.tar.bz2
 %else
@@ -41,6 +43,8 @@ BuildRequires: cmake(KF6Kirigami2)
 BuildRequires: cmake(KF6Notifications)
 BuildRequires: cmake(KF6KIO)
 BuildRequires: cmake(KAccounts6)
+BuildRequires: %{qmlssoaccounts}
+Recommends: %{qmlssoaccounts}
 Requires: %{libname} = %{EVRD}
 
 %description
