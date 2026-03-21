@@ -42,6 +42,8 @@ BuildRequires: cmake(KF6Config)
 BuildRequires: cmake(KF6Kirigami2)
 BuildRequires: cmake(KF6Notifications)
 BuildRequires: cmake(KF6KIO)
+BuildRequires: cmake(KF6Prison)
+BuildRequires: cmake(KF6ItemModels)
 BuildRequires: cmake(KAccounts6)
 BuildRequires: %{qmlssoaccounts}
 Recommends: %{qmlssoaccounts}
